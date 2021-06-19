@@ -30,14 +30,13 @@ public class Pairs {
     int start = 0;
     int end = arr.length - 1;
 
-    boolean found = false;
     int[] result = new int[2];
 
-    while (!found && start < end) {
+    while (start < end) {
       if (arr[start] + arr[end] == sum) {
         result[0] = arr[start];
         result[1] = arr[end];
-        found = true;
+        break;
       } else if (arr[start] + arr[end] > sum) {
         end -= 1;
       } else {
