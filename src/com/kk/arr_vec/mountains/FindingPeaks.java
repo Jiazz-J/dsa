@@ -22,7 +22,7 @@ public class FindingPeaks {
 
     int max = 0;
     // Considering for a mountain array should contain 3 elements
-    for (int i = 1; i < arr.length - 2; i++) {
+    for (int i = 1; i < arr.length - 1; i++) {
       if (arr[i - 1] < arr[i] && arr[i] > arr[i + 1]) {
         peaks.add(arr[i]);
         left = findLeft(arr, i);
