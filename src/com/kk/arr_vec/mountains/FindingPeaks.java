@@ -19,7 +19,7 @@ public class FindingPeaks {
     ArrayList<Integer> peaks = new ArrayList<>();
     int right = 0;
     int left = 0;
-    int peakLng = 0;
+
     int max = 0;
     // Considering for a mountain array should contain 3 elements
     for (int i = 1; i < arr.length - 1; i++) {
@@ -31,7 +31,7 @@ public class FindingPeaks {
         right++;
       }
       if (arr[i] < arr[i + 1] && left > 0) {
-        peakLng = left + right + 1;
+        int peakLng = left + right + 1;
         if (peakLng > max) {
           max = peakLng;
         }
