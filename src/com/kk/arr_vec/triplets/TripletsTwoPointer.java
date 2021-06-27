@@ -46,6 +46,8 @@ public class TripletsTwoPointer {
   }
 }
 
+
+
   /*static int[] findPairs(int[] input, int start, int target) {
       HashSet<Integer> hashSet = new HashSet<>();
       ArrayList<Integer[]> arrayList = new ArrayList<>();
