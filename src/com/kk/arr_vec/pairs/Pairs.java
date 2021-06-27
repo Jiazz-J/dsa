@@ -1,4 +1,4 @@
-package com.kk.arr_vec;
+package com.kk.arr_vec.pairs;
 
 import java.util.Arrays;
 import java.util.HashSet;
